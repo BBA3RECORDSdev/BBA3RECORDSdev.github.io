@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de Hellrun Noir</title>
+<meta name="description" content="Politica de privacidad de Hellrun Noir: que datos salen del movil, para que y como borrarlos.">
+<link rel="icon" href="img/icono.jpg">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <a class="logo" href="./" aria-label="Hellrun Noir"><b>Hellrun</b><i>Noir</i></a>
+    <div class="langs" role="group" aria-label="Idioma / Language">
+      <button id="btn-es" type="button" aria-pressed="true">ES</button>
+      <button id="btn-en" type="button" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="doc">
+<div class="doc-hero"><img src="img/caratula.jpg" alt="" width="1000" height="1032"></div>
+
+<!-- ============================== CASTELLANO ============================== -->
+<article id="doc-es" lang="es">
+
+  <p class="eyebrow">Politica de privacidad</p>
+  <h1>Que sabe de ti Hellrun Noir</h1>
+  <p class="standfirst">Poco. No hay registro, ni correo, ni analiticas. Del telefono sale lo que Google necesita para elegir un anuncio, tu perfil de jugador para las clasificaciones online, una pregunta a internet para saber que dia es y, si entras con Google Play Juegos, una copia de tu partida en tu cuenta de Google.</p>
+
+  <dl class="meta">
+    <dt>Aplicacion</dt><dd>Hellrun Noir (Android)</dd>
+    <dt>Paquete</dt><dd>com.hellrun.noir</dd>
+    <dt>Vigente desde</dt><dd>26 de septiembre de 2026</dd>
+    <dt>Responsable</dt><dd>Borja Ballesta Alfonso</dd>
+  </dl>
+
+  <h2><span class="num">01</span>En corto</h2>
+  <div class="lede">
+    <p><strong>Tu partida se queda en tu movil.</strong> Monedas, mejoras, records, misiones, idioma y ajustes se guardan en el almacenamiento de la propia aplicacion. De ahi sale una copia de tu perfil de jugador, que es el punto siguiente, y, si tienes 13 anos o mas y entras con Google Play Juegos, una copia de tu partida en tu cuenta de Google (apartado 10).</p>
+    <p><strong>Tu perfil de jugador es publico.</strong> Para las clasificaciones de la semana, el juego manda a Unity Gaming Services un alias, tus marcas y tu perfil: como es tu corredor, tus records, tus estadisticas y tu parque. Va con un identificador anonimo, sin correo y sin nada que diga quien eres.</p>
+    <p><strong>Los anuncios los sirve Google.</strong> Para eso, el SDK de Google AdMob recoge algunos datos tecnicos de tu dispositivo y los trata Google. Si eres adulto, Google tambien puede compartirlos con sus socios publicitarios (en Europa, solo si lo aceptas).</p>
+    <p><strong>El juego te trata segun tu edad.</strong> La primera vez que lo abres te pide tu fecha de nacimiento, que el juego no manda a ningun sitio. Si tienes menos de 13 anos, o entre 13 y 17, los anuncios son para tu edad y nunca personalizados. Si eres adulto, ves anuncios normales y, en Europa, se te pregunta antes.</p>
+  </div>
+
+  <h2><span class="num">02</span>Lo que se guarda en tu telefono</h2>
+  <p>Estos datos viven en el almacenamiento privado de la aplicacion, en tu dispositivo, y el juego no los manda a ninguna parte. Si tienes activada la copia de seguridad de Android, el propio telefono puede guardar una copia de los datos de tus aplicaciones, este juego incluido, en tu cuenta de Google; eso lo hace Android, no el juego:</p>
+  <ul>
+    <li>Monedas, mejoras compradas, aspectos desbloqueados y el que llevas puesto.</li>
+    <li>Distancia maxima, mejor puntuacion, niveles superados y logros.</li>
+    <li>Las misiones del dia y la racha de dias seguidos.</li>
+    <li>El idioma elegido y los ajustes de sonido, musica, vibracion, destellos y color seguro.</li>
+    <li>Tu fecha de nacimiento, que el juego te pregunta la primera vez que lo abres, solo para tratarte segun tu edad. El juego no la manda a ningun sitio: ni a Unity ni a Google (como todo lo de esta lista, solo podria ir en la copia de seguridad de Android, si la tienes activada). No se cambia desde los ajustes: <span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span> la borra con todo lo demas, y el juego la vuelve a preguntar.</li>
+    <li>El alias que usas en la clasificacion, para no tener que escribirlo cada vez.</li>
+    <li>La llave de tu cuenta anonima de Unity, para que la proxima vez sigas siendo el mismo jugador en las clasificaciones.</li>
+  </ul>
+  <p>Se borra todo de dos maneras: desinstalando la aplicacion, o desde <span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span> dentro del juego, que borra ademas lo que hay en internet (apartado 03).</p>
+  <p>Para saber que dia es de verdad (las misiones y el reto diario van por dias), el juego hace una peticion vacia a <code>google.com</code> y, si no contesta, a <code>cloudflare.com</code>, y solo lee la hora de la respuesta. No se manda ningun dato tuyo; como en cualquier conexion, esas webs ven la direccion IP.</p>
+
+  <h2><span class="num">03</span>Las clasificaciones y tu perfil</h2>
+  <p>Las dos clasificaciones de la semana (por puntos y por metros) y los perfiles de los jugadores funcionan con <strong>Unity Gaming Services</strong>, de Unity Technologies, que guarda estos datos por encargo del juego. Con conexion, el juego le manda:</p>
+  <ul>
+    <li><strong>Un identificador anonimo de jugador</strong>, que Unity crea la primera vez que el juego se conecta. No es tu correo, ni tu telefono, ni el identificador de publicidad.</li>
+    <li><strong>Tu alias.</strong> Lo escribes tu al empezar, el que quieras, tengas la edad que tengas, y se cambia en tu perfil.</li>
+    <li><strong>Tus marcas de carrera libre</strong>: puntos y metros, con el tiempo y las monedas de esa carrera. El servidor los usa para comprobar que la marca es posible, y guarda la hora de tu ultima marca aceptada.</li>
+    <li><strong>Tu perfil</strong>: el aspecto de tu corredor, tus records (mejor puntuacion y distancia, niveles, estrellas y racha), tus estadisticas de juego (partidas, metros, monedas, saltos y demas) y el trazado de tu parque.</li>
+  </ul>
+  <p>Todo eso <strong>es publico</strong>: cualquier jugador ve tu alias, tus marcas (con su tiempo) y tu perfil, y puede jugar tu parque. Si una carrera tuya es la mejor de siempre, sale como <strong>record de siempre</strong> con tu alias, sus puntos, sus metros y su tiempo, hasta que alguien la supere. Elige un alias inventado y no pongas ahi datos personales tuyos ni de nadie. Se manda solo, al abrir el juego y al acabar cada carrera libre; sin conexion no sale nada y el juego funciona igual. Como cualquier servidor, Unity ve ademas la direccion IP de la conexion.</p>
+  <div class="note">
+    <p><strong>Los alias y los parques los pone cada jugador.</strong> Cada uno escribe el alias que quiere. El juego quita las palabrotas e insultos mas conocidos y, al elegirlo y en tu perfil, te recuerda que no uses tu nombre real, pero no revisa uno por uno los alias ni los parques antes de que se vean. En la medida en que la ley lo permita, el responsable del juego no se hace cargo de lo que cada jugador escriba en su alias o construya en su parque, ni de lo que otros hagan con ello. Si ves un alias ofensivo o con datos personales de alguien, escribe al correo del final y se cambiara o se borrara.</p>
+  </div>
+  <p>La base legal es darte las funciones online del juego. Las clasificaciones empiezan de cero cada lunes y la de la semana anterior se guarda para dar los premios a los tres primeros; tu perfil dura lo que dure tu cuenta anonima.</p>
+  <p><strong>Para borrarlo:</strong> <span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span> borra tambien tu perfil publico y tu cuenta anonima en Unity; si en ese momento no hay conexion, se hace en cuanto la haya. Para cualquier resto, como una marca de una semana pasada o un record de siempre, escribe al correo del final diciendo tu alias.</p>
+  <ul>
+    <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Politica de privacidad de Unity</a></li>
+  </ul>
+
+  <h2><span class="num">04</span>Los anuncios</h2>
+  <p>Hellrun Noir usa <strong>Google AdMob</strong> y solo pone un anuncio cuando lo pides tu: videos recompensados a cambio de algo (seguir despues de morir, las monedas del dia, un turbo) y, para jugar el reto del dia, un anuncio corto que se puede cerrar a los pocos segundos. No hay anuncios que aparezcan solos ni banners.</p>
+  <p><strong>Anuncios segun tu edad.</strong> El juego usa tu fecha de nacimiento (apartado 02) para pedir a Google el trato que toca a tu edad. A Google no le llega la fecha, solo ese trato:</p>
+  <ul>
+    <li><strong>Menos de 13 anos, o si aun no has dicho tu fecha:</strong> trato de nino. Anuncios aptos para todas las edades (clasificacion G) y nunca personalizados, es decir, nada de publicidad segun tus intereses ni de remarketing, y AdMob no manda el identificador de publicidad del telefono. No se pide consentimiento: a un nino no se le puede pedir.</li>
+    <li><strong>De 13 a 17 anos:</strong> el mismo trato de menor que a los ninos (nunca personalizados y sin el identificador de publicidad), pero con anuncios hasta la clasificacion T. Tampoco se pide consentimiento: en Europa, por debajo de la edad de consentimiento digital (de 13 a 16 anos, segun el pais) deciden los padres, y estos anuncios no lo necesitan.</li>
+    <li><strong>18 anos o mas:</strong> anuncios normales. En el Espacio Economico Europeo, Reino Unido y Suiza, antes veras el aviso de consentimiento de Google, y solo se personalizan si aceptas (apartado 05). Fuera de Europa, Google puede personalizarlos; el identificador de publicidad se puede restablecer o eliminar en los ajustes del telefono (apartado 06).</li>
+  </ul>
+  <p>Aunque el juego no recoge nada por su cuenta, el SDK de Google si. Segun la informacion que publica el propio Google, y con esas limitaciones, el SDK de anuncios puede recoger:</p>
+
+  <div class="scroller">
+    <table>
+      <caption>Datos que trata el SDK de Google Mobile Ads</caption>
+      <thead>
+        <tr><th scope="col">Dato</th><th scope="col">Para que</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Identificador de publicidad (AAID, solo de los adultos) e ID del conjunto de aplicaciones</td><td>Elegir anuncios, medir si funcionan, limitar cuantas veces ves el mismo y evitar fraudes</td></tr>
+        <tr><td>Direccion IP y ubicacion aproximada derivada de ella</td><td>Adaptar el anuncio al pais y cumplir la normativa que aplique alli</td></tr>
+        <tr><td>Modelo de dispositivo, sistema operativo e idioma</td><td>Servir un anuncio que se vea bien en tu pantalla</td></tr>
+        <tr><td>Interacciones con la aplicacion y con el anuncio</td><td>Saber si el anuncio se vio, se pulso o se cerro, y pagar al desarrollador</td></tr>
+        <tr><td>Informes de fallos y diagnosticos</td><td>Detectar errores del propio SDK</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Estos datos los trata Google: si eres menor, con las restricciones que aplica a los anuncios para menores; si eres adulto, tambien puede compartirlos con sus socios publicitarios, en Europa solo si das tu consentimiento. Su tratamiento se rige por sus propias condiciones:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politica de privacidad de Google</a></li>
+    <li><a href="https://business.safety.google/privacy/" target="_blank" rel="noopener">Como usa Google los datos de sus socios</a></li>
+    <li><a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">Socios publicitarios de AdMob</a></li>
+  </ul>
+
+  <h2><span class="num">05</span>Consentimiento</h2>
+  <p>Si eres adulto y estas en el Espacio Economico Europeo, Reino Unido o Suiza, justo despues de decir tu fecha de nacimiento veras un aviso de Google que explica para que se usarian tus datos y te deja aceptar o gestionar las opciones una por una. Ese aviso lo muestra la <em>Plataforma de Mensajes de Usuario</em> de Google; el juego no guarda tu respuesta, la guarda el propio SDK.</p>
+  <p>Puedes cambiarla en cualquier momento desde <span class="ui">AJUSTES &rsaquo; PRIVACIDAD DE ANUNCIOS</span>. Ese boton aparece en el juego unicamente donde la normativa lo exige; si no lo ves, es que en tu caso no aplica.</p>
+  <p>Si no consientes el uso de tus datos, los anuncios siguen saliendo, pero sin personalizar.</p>
+  <p>A los menores no se les pide consentimiento: nunca ven anuncios personalizados.</p>
+
+  <h2><span class="num">06</span>Tus derechos</h2>
+  <p>Tienes derecho a acceder a tus datos, rectificarlos, suprimirlos, limitar u oponerte a su tratamiento y a la portabilidad, y a retirar tu consentimiento cuando quieras. En la practica:</p>
+  <ul>
+    <li><strong>Para borrar lo que guarda el juego:</strong> <span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span>. Lo del movil se borra al momento, y tu perfil y tu cuenta online con conexion (o en cuanto la haya). Desinstalar borra solo lo del movil.</li>
+    <li><strong>Para una marca de una semana pasada, o si ya desinstalaste:</strong> escribe al correo del final con tu alias.</li>
+    <li><strong>Para desvincularte de la publicidad:</strong> si eres adulto, en Android ve a <em>Ajustes &rsaquo; Google &rsaquo; Anuncios</em>, donde puedes restablecer o eliminar tu identificador de publicidad.</li>
+    <li><strong>Para retirar el consentimiento:</strong> <span class="ui">AJUSTES &rsaquo; PRIVACIDAD DE ANUNCIOS</span> (apartado 05).</li>
+    <li><strong>Para lo que trata Google:</strong> hay que dirigirse a Google, que es quien tiene esos datos. Los enlaces del apartado 04 explican como.</li>
+    <li><strong>Para la copia de Google Play Juegos:</strong> <span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span> la borra tambien (apartado 10). Los pasos completos estan en el apartado 11.</li>
+  </ul>
+  <p>Tambien puedes reclamar ante la autoridad de proteccion de datos de tu pais. En Espana es la <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Espanola de Proteccion de Datos</a>.</p>
+
+  <h2><span class="num">07</span>Menores</h2>
+  <p>Hellrun Noir es apto para todas las edades y lo juegan tambien ninos, incluso pequenos. Por eso:</p>
+  <ul>
+    <li>Pide la fecha de nacimiento solo para adaptarse a cada edad, y no la manda a ningun sitio (apartado 02).</li>
+    <li>No pide el nombre real, ni el correo, ni ningun dato de contacto, y no hay chat ni mensajes entre jugadores.</li>
+    <li>A los menores de 13, y a quien aun no ha dicho su fecha, no los mete nunca en Google Play Juegos ni se lo ofrece (apartado 10).</li>
+    <li>A los menores de 13, y a quien aun no ha dicho su fecha, los trata como ninos en los anuncios: aptos para todos, nunca personalizados y sin el identificador de publicidad (apartado 04).</li>
+    <li>A los de 13 a 17 anos les da el mismo trato de menor en los anuncios: nunca personalizados y sin el identificador de publicidad, aunque con anuncios para su edad (apartado 04).</li>
+    <li>Lo unico que ven los demas es el alias, las marcas, el perfil del corredor y el parque (apartado 03). El alias lo escribe cada jugador, tenga la edad que tenga; el juego quita las palabrotas mas conocidas y recuerda que no se use el nombre real.</li>
+    <li>Los padres o tutores pueden borrarlo todo desde <span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span>, fecha de nacimiento incluida (el juego la vuelve a preguntar), o escribir al correo del final para ver, cambiar o borrar cualquier dato del menor.</li>
+  </ul>
+  <p>Si eres padre, madre o tutor, te recomendamos acompanar al menor las primeras veces y revisar el alias que elija.</p>
+
+  <h2><span class="num">08</span>Cambios</h2>
+  <p>Si esta politica cambia, se actualiza esta misma pagina y con ella la fecha de la ultima actualizacion, al final.</p>
+
+  <h2><span class="num">09</span>Salud: luces y destellos</h2>
+  <p>Hellrun Noir tiene luces que parpadean, destellos rojos, apagones y cambios bruscos de luz. A un numero muy pequeno de personas, ciertas luces o patrones pueden provocarles una crisis epileptica (epilepsia fotosensible), incluso sin haber tenido nunca antes ningun sintoma. El juego lo avisa al arrancar.</p>
+  <ul>
+    <li>Si tu o alguien de tu familia ha tenido crisis o epilepsia, <strong>consulta a un medico antes de jugar</strong>.</li>
+    <li><strong>Deja de jugar enseguida</strong> y consulta a un medico si notas mareo, vista alterada, espasmos, desorientacion o perdida de consciencia.</li>
+    <li>Juega en un sitio bien iluminado, a una distancia comoda de la pantalla, y descansa a menudo.</li>
+    <li>Los destellos y las sacudidas se pueden quitar en <strong>Ajustes &gt; Destellos</strong>.</li>
+  </ul>
+  <div class="note">
+    <p><strong>Responsabilidad.</strong> Jugar a Hellrun Noir es decision de quien juega o, si es menor, de sus padres o tutores. En la medida en que la ley lo permita, el responsable del juego no se hace cargo de los danos ni de los problemas de salud que puedan derivarse de su uso, incluidos los relacionados con la fotosensibilidad, ni de los alias, parques u otros contenidos que pongan los jugadores (apartado 03). Esto no limita los derechos que la ley te reconozca como consumidor.</p>
+  </div>
+
+  <h2><span class="num">10</span>Google Play Juegos</h2>
+  <p>Si tienes <strong>13 anos o mas</strong> y usas <strong>Google Play Juegos</strong> en tu movil, el juego entra con tu cuenta de Play Juegos al acabar la bienvenida, para guardar una <strong>copia de tu partida</strong> en tu cuenta de Google. Si cierras la ventana de Google, no entra; puedes entrar mas tarde desde <span class="ui">AJUSTES &rsaquo; PLAY JUEGOS</span>. A los menores de 13, y a quien aun no ha dicho su fecha de nacimiento, el juego no los mete nunca en Play Juegos.</p>
+  <p>La copia la guarda Google en tu cuenta, en <em>Partidas guardadas</em>, y lleva tu progreso: monedas, mejoras, aspectos, niveles y estrellas, logros, misiones y racha, tus parques y tu alias. <strong>No lleva tu fecha de nacimiento.</strong> Sirve para recuperar la partida si cambias de movil. Ademas, Google sabe que juegas a Hellrun Noir con tu perfil de Play Juegos. Todo eso lo trata Google segun su politica de privacidad (enlaces del apartado 04).</p>
+  <p><span class="ui">AJUSTES &rsaquo; BORRAR PROGRESO</span> borra tambien esa copia (con conexion). Desde la aplicacion Google Play Juegos puedes ademas borrar los datos de cualquier juego o tu perfil entero.</p>
+
+  <h2 id="borrar"><span class="num">11</span>Como borrar tus datos</h2>
+  <p>Hellrun Noir es un juego de Borja Ballesta Alfonso. Para borrar tus datos:</p>
+  <ul>
+    <li><strong>Desde el juego:</strong> abre <span class="ui">AJUSTES</span>, toca <span class="ui">BORRAR PROGRESO</span> y vuelve a tocar para confirmar. Se borra al momento todo lo del movil (partida, alias y fecha de nacimiento) y, con conexion, tu perfil publico, tu cuenta anonima en Unity y la copia de Google Play Juegos. Si no hay conexion en ese momento, lo de internet se borra en cuanto la haya.</li>
+    <li><strong>Si ya no tienes el juego, o para lo que quede:</strong> escribe a <strong>borjaballeataalfonso@gmail.com</strong> diciendo tu alias. Se borra en un plazo maximo de 30 dias y se te confirma por correo.</li>
+  </ul>
+  <p><strong>Lo que se conserva y cuanto tiempo:</strong></p>
+  <ul>
+    <li>Tus marcas en la clasificacion de la semana en curso y de la anterior: se borran solas al cambiar de semana, como mucho en dos semanas, o antes si lo pides por correo.</li>
+    <li>Un record de siempre con tu alias: se queda hasta que alguien lo supere o hasta que pidas que se borre.</li>
+    <li>Lo que recoge Google para los anuncios lo conserva Google segun su politica (apartado 04); el identificador de publicidad se restablece o elimina en <em>Ajustes &rsaquo; Google &rsaquo; Anuncios</em>.</li>
+    <li>La copia de seguridad de Android, si la tienes activada, la gestiona tu cuenta de Google.</li>
+  </ul>
+
+  <div class="contact">
+    <h3>Contacto</h3>
+    <p>Para cualquier cosa relacionada con esta politica o con tus datos:</p>
+    <p><strong class="mail">borjaballeataalfonso@gmail.com</strong></p>
+  </div>
+
+  <footer>Hellrun Noir &middot; com.hellrun.noir &middot; Ultima actualizacion: 8 de octubre de 2026</footer>
+</article>
+
+<!-- ================================ ENGLISH =============================== -->
+<article id="doc-en" lang="en" hidden>
+
+  <p class="eyebrow">Privacy policy</p>
+  <h1>What Hellrun Noir knows about you</h1>
+  <p class="standfirst">Very little. No sign-up, no email, no analytics. What leaves your phone: what Google needs in order to pick an ad, your player profile for the online leaderboards, a question to the internet about what day it is and, if you sign in with Google Play Games, a copy of your progress in your Google account.</p>
+
+  <dl class="meta">
+    <dt>Application</dt><dd>Hellrun Noir (Android)</dd>
+    <dt>Package</dt><dd>com.hellrun.noir</dd>
+    <dt>Effective</dt><dd>26 September 2026</dd>
+    <dt>Controller</dt><dd>Borja Ballesta Alfonso</dd>
+  </dl>
+
+  <h2><span class="num">01</span>In short</h2>
+  <div class="lede">
+    <p><strong>Your progress stays on your phone.</strong> Coins, upgrades, records, missions, language and settings are kept in the app's own storage. What leaves it is a copy of your player profile, covered in the next point, and, if you are 13 or over and sign in with Google Play Games, a copy of your progress in your Google account (section 10).</p>
+    <p><strong>Your player profile is public.</strong> For the weekly leaderboards, the game sends Unity Gaming Services an alias, your scores and your profile: what your runner looks like, your records, your stats and your park. It goes with an anonymous ID, no email and nothing that says who you are.</p>
+    <p><strong>Ads are served by Google.</strong> To do that, the Google AdMob SDK collects some technical data from your device, which Google handles. If you are an adult, Google may also share it with its advertising partners (in Europe, only if you agree).</p>
+    <p><strong>The game treats you according to your age.</strong> The first time you open it, it asks for your date of birth, which the game does not send anywhere. If you are under 13, or between 13 and 17, ads are suited to your age and never personalised. If you are an adult, you get normal ads and, in Europe, you are asked first.</p>
+  </div>
+
+  <h2><span class="num">02</span>What is stored on your phone</h2>
+  <p>This data lives in the app's private storage, on your device, and the game does not send it anywhere. If you have Android backup turned on, your phone itself may keep a copy of your apps' data, this game included, in your Google account; that is done by Android, not by the game:</p>
+  <ul>
+    <li>Coins, purchased upgrades, unlocked skins and the one you are wearing.</li>
+    <li>Best distance, best score, levels cleared and achievements.</li>
+    <li>Daily missions and your day streak.</li>
+    <li>Your chosen language and the sound, music, vibration, flashes and safe-colour settings.</li>
+    <li>Your date of birth, which the game asks for the first time you open it, only to treat you according to your age. The game does not send it anywhere: not to Unity and not to Google (like everything on this list, it could only go into Android's backup, if you have it turned on). It cannot be changed in the settings: <span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span> erases it along with everything else, and the game asks for it again.</li>
+    <li>The alias you use on the leaderboard, so you do not have to type it every time.</li>
+    <li>The key to your anonymous Unity account, so that next time you are still the same player on the leaderboards.</li>
+  </ul>
+  <p>You can erase all of it in two ways: uninstall the app, or use <span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span> inside the game, which also erases what is online (section 03).</p>
+  <p>To know the real date (missions and the daily challenge go by days), the game sends an empty request to <code>google.com</code> and, if that does not answer, to <code>cloudflare.com</code>, and only reads the time from the reply. None of your data is sent; as with any connection, those sites see the IP address.</p>
+
+  <h2><span class="num">03</span>The leaderboards and your profile</h2>
+  <p>The two weekly leaderboards (points and metres) and the player profiles run on <strong>Unity Gaming Services</strong>, from Unity Technologies, which stores this data on the game's behalf. When there is a connection, the game sends it:</p>
+  <ul>
+    <li><strong>An anonymous player ID</strong>, which Unity creates the first time the game connects. It is not your email, your phone number or your advertising ID.</li>
+    <li><strong>Your alias.</strong> You type the one you want when you start, whatever your age, and you change it in your profile.</li>
+    <li><strong>Your free-run scores</strong>: points and metres, with that run's time and coins. The server uses them to check the score is possible, and keeps the time of your last accepted score.</li>
+    <li><strong>Your profile</strong>: what your runner looks like, your records (best score and distance, levels, stars and streak), your play stats (runs, metres, coins, jumps and so on) and the layout of your park.</li>
+  </ul>
+  <p>All of that <strong>is public</strong>: any player can see your alias, your scores (with their time) and your profile, and can play your park. If one of your runs is the best ever, it is shown as the <strong>all-time record</strong> with your alias, its points, metres and time, until someone beats it. Pick a made-up alias and do not put personal details of yours or anyone else's in it. It is sent automatically, when the game opens and at the end of each free run; with no connection nothing is sent and the game works the same. Like any server, Unity also sees the IP address of the connection.</p>
+  <div class="note">
+    <p><strong>Each player chooses their own alias and builds their own park.</strong> Everyone types the alias they want. The game removes the best-known swear words and insults and, when you pick it and in your profile, reminds you not to use your real name, but it does not review every alias or park before others see it. To the extent permitted by law, the person responsible for the game is not liable for what any player writes in their alias or builds in their park, or for what others do with it. If you see an offensive alias or one with someone's personal details, write to the address at the end and it will be changed or removed.</p>
+  </div>
+  <p>The legal basis is providing the game's online features. The leaderboards start from zero every Monday and the previous week's is kept so the top three can get their prizes; your profile lasts as long as your anonymous account.</p>
+  <p><strong>To erase it:</strong> <span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span> also deletes your public profile and your anonymous Unity account; if there is no connection at that moment, it happens as soon as there is one. For anything left over, such as a score from a past week or an all-time record, write to the address at the end quoting your alias.</p>
+  <ul>
+    <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></li>
+  </ul>
+
+  <h2><span class="num">04</span>Advertising</h2>
+  <p>Hellrun Noir uses <strong>Google AdMob</strong> and only shows an ad when you ask for it: rewarded videos in exchange for something (continuing after you die, the daily coins, a turbo) and, to play the daily challenge, a short ad you can close after a few seconds. There are no ads that appear on their own, and no banners.</p>
+  <p><strong>Ads according to your age.</strong> The game uses your date of birth (section 02) to ask Google for the treatment that fits your age. Google does not get the date, only that treatment:</p>
+  <ul>
+    <li><strong>Under 13, or if you have not given your date yet:</strong> child treatment. Ads suitable for all ages (rating G) and never personalised, which means no interest-based advertising and no remarketing, and AdMob does not send the phone's advertising ID. No consent is asked: consent cannot be asked of a child.</li>
+    <li><strong>13 to 17:</strong> the same minor treatment as children (never personalised and without the advertising ID), but with ads rated up to T. No consent is asked either: in Europe, below the age of digital consent (13 to 16, depending on the country) parents decide, and these ads do not need it.</li>
+    <li><strong>18 and over:</strong> normal ads. In the European Economic Area, the United Kingdom and Switzerland, you will first see Google's consent notice, and they are only personalised if you accept (section 05). Outside Europe, Google may personalise them; the advertising ID can be reset or deleted in your phone's settings (section 06).</li>
+  </ul>
+  <p>The game itself collects nothing, but Google's SDK does. According to Google's own published disclosure, and within those limits, the ads SDK may collect:</p>
+
+  <div class="scroller">
+    <table>
+      <caption>Data handled by the Google Mobile Ads SDK</caption>
+      <thead>
+        <tr><th scope="col">Data</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Advertising ID (AAID, adults only) and App Set ID</td><td>Selecting ads, measuring whether they work, capping how often you see the same one and preventing fraud</td></tr>
+        <tr><td>IP address and the approximate location derived from it</td><td>Matching the ad to your country and complying with the rules that apply there</td></tr>
+        <tr><td>Device model, operating system and language</td><td>Serving an ad that fits your screen</td></tr>
+        <tr><td>App and ad interactions</td><td>Knowing whether the ad was seen, tapped or closed, and paying the developer</td></tr>
+        <tr><td>Crash logs and diagnostics</td><td>Spotting faults in the SDK itself</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Google handles this data: for minors, under the restrictions it applies to ads for minors; for adults, it may also share it with its advertising partners, in Europe only if you consent. Its handling is governed by its own terms:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    <li><a href="https://business.safety.google/privacy/" target="_blank" rel="noopener">How Google uses data from partner sites and apps</a></li>
+    <li><a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">AdMob advertising partners</a></li>
+  </ul>
+
+  <h2><span class="num">05</span>Consent</h2>
+  <p>If you are an adult in the European Economic Area, the United Kingdom or Switzerland, right after you give your date of birth you will see a notice from Google explaining what your data would be used for, letting you accept or manage each purpose. That notice is shown by Google's <em>User Messaging Platform</em>; the game does not store your answer, the SDK does.</p>
+  <p>You can change it at any time from <span class="ui">SETTINGS &rsaquo; AD PRIVACY</span>. That button only appears where the law requires it, so if you cannot see it, it does not apply to you.</p>
+  <p>If you do not consent, you will still see ads, but they will not be personalised.</p>
+  <p>Minors are not asked for consent: they never get personalised ads.</p>
+
+  <h2><span class="num">06</span>Your rights</h2>
+  <p>You have the right to access your data, to have it corrected or erased, to restrict or object to its processing, to data portability, and to withdraw your consent at any time. In practice:</p>
+  <ul>
+    <li><strong>To erase what the game stores:</strong> <span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span>. What is on the phone goes at once, and your online profile and account with a connection (or as soon as there is one). Uninstalling only erases what is on the phone.</li>
+    <li><strong>For a score from a past week, or if you have already uninstalled:</strong> write to the address at the end quoting your alias.</li>
+    <li><strong>To break the link with advertising:</strong> if you are an adult, on Android go to <em>Settings &rsaquo; Google &rsaquo; Ads</em>, where you can reset or delete your advertising ID.</li>
+    <li><strong>To withdraw consent:</strong> <span class="ui">SETTINGS &rsaquo; AD PRIVACY</span> (section 05).</li>
+    <li><strong>For what Google holds:</strong> you need to go to Google, which is the party holding it. The links in section 04 explain how.</li>
+    <li><strong>For the Google Play Games copy:</strong> <span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span> deletes it too (section 10). The full steps are in section 11.</li>
+  </ul>
+  <p>You can also complain to the data protection authority in your country. In Spain that is the <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Espanola de Proteccion de Datos</a>.</p>
+
+  <h2><span class="num">07</span>Children</h2>
+  <p>Hellrun Noir is suitable for all ages and is played by children too, including young ones. That is why:</p>
+  <ul>
+    <li>It asks for the date of birth only to adapt to each age, and it does not send it anywhere (section 02).</li>
+    <li>It does not ask for real name, email or any contact details, and there is no chat or messaging between players.</li>
+    <li>It never signs under-13s, or anyone who has not given their date yet, into Google Play Games, and does not offer it to them (section 10).</li>
+    <li>It treats under-13s, and anyone who has not given their date yet, as children for advertising: suitable for all ages, never personalised and without the advertising ID (section 04).</li>
+    <li>It gives those aged 13 to 17 the same minor treatment for advertising: never personalised and without the advertising ID, though with ads suited to their age (section 04).</li>
+    <li>The only things others can see are the alias, the scores, the runner's profile and the park (section 03). Every player types their own alias, whatever their age; the game removes the best-known swear words and reminds players not to use their real name.</li>
+    <li>Parents or guardians can erase everything from <span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span>, date of birth included (the game asks for it again), or write to the address at the end to see, change or erase any of the child's data.</li>
+  </ul>
+  <p>If you are a parent or guardian, we recommend playing alongside the child the first few times and checking the alias they choose.</p>
+
+  <h2><span class="num">08</span>Changes</h2>
+  <p>If this policy changes, this page is updated along with the last-updated date at the end.</p>
+
+  <h2><span class="num">09</span>Health: flashing lights</h2>
+  <p>Hellrun Noir has flashing lights, red flashes, blackouts and sudden changes of light. A very small number of people may have an epileptic seizure when exposed to certain lights or patterns (photosensitive epilepsy), even if they have never had any symptoms before. The game warns about this when it starts.</p>
+  <ul>
+    <li>If you or anyone in your family has had seizures or epilepsy, <strong>see a doctor before playing</strong>.</li>
+    <li><strong>Stop playing at once</strong> and see a doctor if you feel dizzy, notice altered vision, twitching, disorientation or loss of awareness.</li>
+    <li>Play in a well lit room, at a comfortable distance from the screen, and take frequent breaks.</li>
+    <li>Flashes and screen shake can be turned off in <strong>Settings &gt; Flashes</strong>.</li>
+  </ul>
+  <div class="note">
+    <p><strong>Liability.</strong> Playing Hellrun Noir is the decision of the player or, for a minor, of their parents or guardians. To the extent permitted by law, the person responsible for the game accepts no liability for any damage or health problem arising from its use, including anything related to photosensitivity, or for aliases, parks or any other content added by players (section 03). This does not limit any rights you have as a consumer under the law.</p>
+  </div>
+
+  <h2><span class="num">10</span>Google Play Games</h2>
+  <p>If you are <strong>13 or over</strong> and use <strong>Google Play Games</strong> on your phone, the game signs in with your Play Games account when the welcome ends, to keep a <strong>copy of your progress</strong> in your Google account. If you close Google's window, it does not sign in; you can sign in later from <span class="ui">SETTINGS &rsaquo; PLAY GAMES</span>. The game never signs under-13s, or anyone who has not given their date of birth yet, into Play Games.</p>
+  <p>Google keeps the copy in your account, under <em>Saved games</em>, and it holds your progress: coins, upgrades, skins, levels and stars, achievements, missions and streak, your parks and your alias. <strong>It does not include your date of birth.</strong> It lets you get your progress back if you change phones. Google also knows you play Hellrun Noir with your Play Games profile. Google handles all of this under its privacy policy (links in section 04).</p>
+  <p><span class="ui">SETTINGS &rsaquo; WIPE PROGRESS</span> also deletes that copy (with a connection). From the Google Play Games app you can also delete any game's data or your whole profile.</p>
+
+  <h2 id="delete"><span class="num">11</span>How to delete your data</h2>
+  <p>Hellrun Noir is a game by Borja Ballesta Alfonso. To delete your data:</p>
+  <ul>
+    <li><strong>From the game:</strong> open <span class="ui">SETTINGS</span>, tap <span class="ui">WIPE PROGRESS</span> and tap again to confirm. Everything on the phone (progress, alias and date of birth) is deleted at once and, with a connection, your public profile, your anonymous Unity account and the Google Play Games copy. If there is no connection at that moment, the online part is deleted as soon as there is one.</li>
+    <li><strong>If you no longer have the game, or for anything left over:</strong> write to <strong>borjaballeataalfonso@gmail.com</strong> quoting your alias. It is deleted within 30 days at most and you get a confirmation by email.</li>
+  </ul>
+  <p><strong>What is kept, and for how long:</strong></p>
+  <ul>
+    <li>Your scores on the current and previous week's leaderboard: they go on their own when the week changes, within two weeks at most, or sooner if you ask by email.</li>
+    <li>An all-time record with your alias: it stays until someone beats it or until you ask for it to be removed.</li>
+    <li>What Google collects for ads is kept by Google under its policy (section 04); the advertising ID can be reset or deleted in <em>Settings &rsaquo; Google &rsaquo; Ads</em>.</li>
+    <li>Android's backup, if you have it on, is managed by your Google account.</li>
+  </ul>
+
+  <div class="contact">
+    <h3>Contact</h3>
+    <p>For anything to do with this policy or your data:</p>
+    <p><strong class="mail">borjaballeataalfonso@gmail.com</strong></p>
+  </div>
+
+  <footer>Hellrun Noir &middot; com.hellrun.noir &middot; Last updated: 8 October 2026</footer>
+</article>
+
+</main>
+
+<script>
+  (function () {
+    var docs = { es: document.getElementById('doc-es'), en: document.getElementById('doc-en') };
+    var btns = { es: document.getElementById('btn-es'), en: document.getElementById('btn-en') };
+
+    function apply(lang) {
+      if (lang !== 'en') lang = 'es';
+      docs.es.hidden = lang !== 'es';
+      docs.en.hidden = lang !== 'en';
+      btns.es.setAttribute('aria-pressed', String(lang === 'es'));
+      btns.en.setAttribute('aria-pressed', String(lang === 'en'));
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('hellrun.privacy.lang', lang); } catch (e) {}
+    }
+
+    var start = 'es';
+    try {
+      var saved = localStorage.getItem('hellrun.privacy.lang');
+      if (saved === 'es' || saved === 'en') start = saved;
+      else if ((navigator.language || '').slice(0, 2).toLowerCase() !== 'es') start = 'en';
+    } catch (e) {}
+    // un enlace directo a un apartado (#borrar, #delete) abre su idioma
+    var target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+    if (target && docs.en.contains(target)) start = 'en';
+    else if (target && docs.es.contains(target)) start = 'es';
+
+    apply(start);
+    if (target) target.scrollIntoView();
+    btns.es.addEventListener('click', function () { apply('es'); });
+    btns.en.addEventListener('click', function () { apply('en'); });
+  })();
+</script>
+</body>
+</html>

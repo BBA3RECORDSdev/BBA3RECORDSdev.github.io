@@ -1,27 +1,152 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hellrun Noir</title>
-<style>
-  body { margin: 0; background: #0a0a0e; color: #f0f0ec; font: 16px/1.6 system-ui, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 64px 20px; }
-  h1 { font-size: 48px; letter-spacing: 8px; margin: 0 0 4px; }
-  .noir { color: #a5a8b0; letter-spacing: 16px; font-size: 28px; font-weight: 700; margin: 0 0 32px; }
-  a { color: #f0f0ec; }
-  p { color: #c8c9cf; }
-</style>
+<meta name="description" content="Hellrun Noir: corre por un tunel de cuatro caras, salta, derrapa y sube por las paredes en 7 mundos. Juego para Android de BBA3RECORDS.">
+<meta property="og:title" content="Hellrun Noir">
+<meta property="og:description" content="Corre por un tunel noir: salta, derrapa y sube por las paredes en 7 mundos.">
+<meta property="og:image" content="https://bba3recordsdev.github.io/img/caratula.jpg">
+<link rel="icon" href="img/icono.jpg">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<main>
-  <h1>HELLRUN</h1>
-  <p class="noir">NOIR</p>
-  <p>Corre por un túnel noir: salta, derrapa y sube por las paredes en 7 mundos.</p>
-  <p>Run through a noir tunnel: jump, slide and run up the walls across 7 worlds.</p>
-  <p><a href="https://play.google.com/store/apps/details?id=com.hellrun.noir">Google Play</a></p>
-  <p><a href="https://claude.ai/artifact/WpwkuirKgyVC6YYcBdH5cK">Política de privacidad / Privacy policy</a></p>
-  <p>BBA3RECORDS · borjaballeataalfonso@gmail.com</p>
-</main>
+
+<header class="bar">
+  <div class="bar-inner">
+    <a class="logo" href="./" aria-label="Hellrun Noir"><b>Hellrun</b><i>Noir</i></a>
+    <div class="langs" role="group" aria-label="Idioma / Language">
+      <button id="btn-es" type="button" aria-pressed="true">ES</button>
+      <button id="btn-en" type="button" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="tunnel"></div>
+  <div class="hero-inner">
+    <div>
+      <h1 class="logo" aria-label="Hellrun Noir"><b>Hellrun</b><i>Noir</i></h1>
+      <p class="tagline">
+        <span class="es">Corre por un túnel de cuatro caras. Tu corredor no para: tú solo esquivas. Salta, derrapa, cambia de carril y súbete a las paredes cuando el suelo se cierra.</span>
+        <span class="en">Run through a four-sided tunnel. Your runner never stops: all you do is dodge. Jump, slide, switch lanes and climb onto the walls when the floor closes in.</span>
+      </p>
+      <a class="btn main" href="https://play.google.com/store/apps/details?id=com.hellrun.noir">
+        <span class="es">Pronto en Google Play</span><span class="en">Soon on Google Play</span>
+      </a>
+      <p class="label small"><span class="es">Gratis · Android · Español e inglés</span><span class="en">Free · Android · Spanish and English</span></p>
+    </div>
+    <div class="hero-art">
+      <img src="img/caratula.jpg" width="1000" height="1032" alt="El corredor de Hellrun Noir bajando por el tunel">
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <p class="label"><span class="es">Del Noir al Infierno</span><span class="en">From Noir to Inferno</span></p>
+  <h2><span class="es">Siete mundos</span><span class="en">Seven worlds</span></h2>
+  <p class="intro">
+    <span class="es">Noir, Arcoíris, Taller, Metro, Catacumbas, Forja e Infierno. Cada mundo tiene su color, su música y su propio obstáculo: trenes, prensas, géiseres, rodillos de calaveras y mucho más.</span>
+    <span class="en">Noir, Rainbow, Workshop, Subway, Catacombs, Forge and Inferno. Every world has its own colour, its own music and its own obstacle: trains, presses, geysers, skull rollers and more.</span>
+  </p>
+  <div class="shots">
+    <figure><img src="img/c3_arcoiris.jpg" width="540" height="960" alt="" loading="lazy"><figcaption class="label"><span class="es">Arcoíris</span><span class="en">Rainbow</span></figcaption></figure>
+    <figure><img src="img/c4_taller.jpg" width="540" height="960" alt="" loading="lazy"><figcaption class="label"><span class="es">Taller</span><span class="en">Workshop</span></figcaption></figure>
+    <figure><img src="img/c6_metro.jpg" width="540" height="960" alt="" loading="lazy"><figcaption class="label"><span class="es">Metro</span><span class="en">Subway</span></figcaption></figure>
+    <figure><img src="img/c7_catacumbas.jpg" width="540" height="960" alt="" loading="lazy"><figcaption class="label"><span class="es">Catacumbas</span><span class="en">Catacombs</span></figcaption></figure>
+    <figure><img src="img/c8_forja.jpg" width="540" height="960" alt="" loading="lazy"><figcaption class="label"><span class="es">Forja</span><span class="en">Forge</span></figcaption></figure>
+    <figure><img src="img/c8_infierno.jpg" width="540" height="960" alt="" loading="lazy"><figcaption class="label"><span class="es">Infierno</span><span class="en">Inferno</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="block">
+  <p class="label"><span class="es">Qué hay dentro</span><span class="en">What's inside</span></p>
+  <h2><span class="es">Para jugar mucho</span><span class="en">Built to keep you running</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3><span class="num">84</span> <span class="es">niveles en un camino</span><span class="en">levels on a path</span></h3>
+      <p><span class="es">Supera cada nivel para abrir el siguiente y consigue sus estrellas. Repite cualquiera contra tu propio fantasma.</span><span class="en">Clear each level to open the next one and collect its stars. Replay any of them against your own ghost.</span></p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Carrera libre</span><span class="en">Free run</span></h3>
+      <p><span class="es">Los siete mundos sin parar y clasificaciones de la semana, por puntos y por metros. El primero de cada semana se lleva un premio.</span><span class="en">All seven worlds without stopping, and weekly leaderboards by points and by metres. The top player each week wins a prize.</span></p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Reto del día</span><span class="en">Daily challenge</span></h3>
+      <p><span class="es">Un túnel nuevo cada día, el mismo para todos: corto y muy difícil. Supéralo y gana <span class="num">2.000</span> monedas.</span><span class="en">A new tunnel every day, the same for everyone: short and very hard. Beat it and win <span class="num">2,000</span> coins.</span></p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Ritmo</span><span class="en">Rhythm</span></h3>
+      <p><span class="es">Corre al compás de la música.</span><span class="en">Run to the beat of the music.</span></p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Mi parque</span><span class="en">My park</span></h3>
+      <p><span class="es">Construye tus propios circuitos pieza a pieza, juégalos y prueba los parques de otros jugadores.</span><span class="en">Build your own tracks piece by piece, play them, and try other players' parks.</span></p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Misiones y logros</span><span class="en">Missions and achievements</span></h3>
+      <p><span class="es">Misiones diarias, logros y una racha que crece cada día que juegas.</span><span class="en">Daily missions, achievements and a streak that grows every day you play.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <p class="label"><span class="es">Ropa, pieles y colores</span><span class="en">Clothes, skins and colours</span></p>
+  <h2><span class="es">Tu corredor</span><span class="en">Your runner</span></h2>
+  <div class="runner">
+    <img src="img/c1_sala.jpg" width="540" height="960" alt="" loading="lazy">
+    <img src="img/c5_atuendo.jpg" width="540" height="960" alt="" loading="lazy">
+    <div class="text">
+      <p><span class="es">Gana monedas para mejoras y pieles, y desbloquea ropa y colores con los niveles, los logros y las estrellas.</span><span class="en">Earn coins for upgrades and skins, and unlock clothes and colours through levels, achievements and stars.</span></p>
+      <ul class="dash">
+        <li><span class="es">Tutorial jugable: se aprende en un minuto.</span><span class="en">Playable tutorial: learn in a minute.</span></li>
+        <li><span class="es">Se juega sin conexión.</span><span class="en">Plays offline.</span></li>
+        <li><span class="es">Sin anuncios que salten solos: solo ves uno cuando lo eliges.</span><span class="en">No ads that pop up on their own: you only see one when you choose to.</span></li>
+        <li><span class="es">Copia de tu partida con Google Play Juegos.</span><span class="en">Save your progress with Google Play Games.</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="warn"><span class="es">Aviso: el juego tiene luces que parpadean. Los destellos se pueden quitar en Ajustes, y hay colores seguros.</span><span class="en">Warning: the game has flashing lights. Flashes can be turned off in Settings, and there are safe colours.</span></p>
+</section>
+
+<section class="cta-end">
+  <a class="logo" href="#" aria-label="Hellrun Noir"><b>Hellrun</b><i>Noir</i></a><br>
+  <a class="btn main" href="https://play.google.com/store/apps/details?id=com.hellrun.noir"><span class="es">Pronto en Google Play</span><span class="en">Soon on Google Play</span></a>
+</section>
+
+<footer class="foot">
+  <nav>
+    <a href="privacidad.html"><span class="es">Política de privacidad</span><span class="en">Privacy policy</span></a>
+    <a href="privacidad.html#borrar" class="es">Borrar tus datos</a>
+    <a href="privacidad.html#delete" class="en">Delete your data</a>
+    <span><span class="es">Contacto:</span><span class="en">Contact:</span> <span class="mail">borjaballeataalfonso@gmail.com</span></span>
+  </nav>
+  <span>© 2026 BBA3RECORDS</span>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btns = { es: document.getElementById('btn-es'), en: document.getElementById('btn-en') };
+    function apply(lang) {
+      if (lang !== 'en') lang = 'es';
+      root.setAttribute('data-lang', lang);
+      root.setAttribute('lang', lang);
+      btns.es.setAttribute('aria-pressed', String(lang === 'es'));
+      btns.en.setAttribute('aria-pressed', String(lang === 'en'));
+      try { localStorage.setItem('hellrun.privacy.lang', lang); } catch (e) {}
+    }
+    var start = 'es';
+    try {
+      var saved = localStorage.getItem('hellrun.privacy.lang');
+      if (saved === 'es' || saved === 'en') start = saved;
+      else if ((navigator.language || '').slice(0, 2).toLowerCase() !== 'es') start = 'en';
+    } catch (e) {}
+    apply(start);
+    btns.es.addEventListener('click', function () { apply('es'); });
+    btns.en.addEventListener('click', function () { apply('en'); });
+  })();
+</script>
 </body>
 </html>
